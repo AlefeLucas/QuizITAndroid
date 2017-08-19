@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#363336"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ti01n.quizit.QuestionActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Title"
+                android:textColor="#e4e4e4"
+                android:textSize="22dp"
+                android:typeface="sans"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center" />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:id="@+id/progressBar"
+                android:layout_gravity="center_horizontal"
+                android:indeterminate="false"
+                android:visibility="visible"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:progressBackgroundTint="#f15350"
+                android:progressTint="#f9922e" />
+
+            <TextView
+                android:id="@+id/textViewQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text="Pergunta"
+                android:textColor="#e4e4e4"
+                android:textSize="22dp"
+                android:typeface="sans" />
+
+            <Button
+                android:id="@+id/buttonA"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/backresposta"
+                android:textAllCaps="false"
+                android:typeface="monospace"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonB"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/backresposta"
+                android:textAllCaps="false"
+                android:typeface="monospace"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonC"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/backresposta"
+                android:textAllCaps="false"
+                android:typeface="monospace"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonD"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/backresposta"
+                android:textAllCaps="false"
+                android:typeface="monospace"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:layout_width="125dp"
+                android:layout_height="55dp"
+                android:layout_gravity="right"
+                android:background="@drawable/buttonnext"
+                android:layout_marginTop="40dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
